@@ -1,5 +1,5 @@
 from turtle import *
-middle(10)
+
 
 #we want to paint a house
 
