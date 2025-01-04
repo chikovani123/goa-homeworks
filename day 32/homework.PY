@@ -1,0 +1,1 @@
+#slicing Python-ში კოლექციის ნაწილის ამოსაღებია start stop step სინტაქსით
