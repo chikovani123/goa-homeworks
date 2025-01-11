@@ -1,0 +1,15 @@
+.styled {
+    color: white; 
+    background-color: darkblue; 
+    font-size: 20px;
+    padding: 10px; 
+    border-radius: 5px; 
+}
+
+.styled {
+    margin-bottom: 10px;
+}
+
+.styled {
+    line-height: 1.6;
+}
