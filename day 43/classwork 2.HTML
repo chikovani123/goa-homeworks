@@ -1,0 +1,44 @@
+<html">
+<head>
+    <title>classwork 2</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .parent {
+            width: 100%;
+            height: 1000px;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            background-color: lightgray;
+        }
+        .child {
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+        }
+        .child:nth-child(1) {
+            background-color: red;
+        }
+        .child:nth-child(2) {
+            background-color: green;
+        }
+        .child:nth-child(3) {
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <section class="parent">
+        <div class="child"></div>
+        <div class="child"></div>
+        <div class="child"></div>
+    </section>
+</body>
+</html>
