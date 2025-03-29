@@ -1,0 +1,11 @@
+.container {
+    display: flex;
+    justify-content: center;
+}
+.box {
+    width: 200px;
+    height: 100px;
+    background: lightblue;
+    text-align: center;
+    line-height: 100px;
+}
