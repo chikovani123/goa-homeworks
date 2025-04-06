@@ -1,0 +1,33 @@
+<html>
+<head>
+    <title>classwork</title>
+    <style>
+        .box {
+            width: 500px;
+            height: 500px;
+            background-color: black;
+            color: white;
+            font-size: 20px;
+            transition: font-size 1s ease-in-out, background-color 2s ease-in-out, color 2s ease-in-out;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
+        
+        .box:hover {
+            transform: scale(2) rotate(45deg);
+        }
+        
+        .box:active {
+            transform: translate(-50px, -100px);
+            font-size: 25px;
+            background-color: white;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">div block</div>
+</body>
+</html>
