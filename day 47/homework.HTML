@@ -1,0 +1,112 @@
+<html>
+<head>
+  <titl>homework</title>
+  <style>
+    .example {
+      margin: 20px;
+      padding: 20px;
+      width: 100px;
+      height: 100px;
+      background: lightgray;
+      display: inline-block;
+    }
+
+    @keyframes moveRight {
+      from { transform: translateX(0); }
+      to { transform: translateX(200px); }
+    }
+    .move-box { animation: moveRight 2s linear; }
+
+    @keyframes colorChange {
+      from { background-color: blue; }
+      to { background-color: red; }
+    }
+    .color-box { background-color: blue; animation: colorChange 5s forwards; }
+
+    @keyframes rotate360 {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+    .rotating { animation: rotate360 2s linear; }
+
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.2); }
+    }
+    .pulsing { animation: pulse 1.5s infinite; }
+
+    /* 🔄 Iteration Count */
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-50px); }
+    }
+    .bounce-three { animation: bounce 1s ease-in-out 3; }
+
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+    .spinner { animation: spin 1s linear infinite; }
+
+    @keyframes fadeOnce {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    .fade-once { animation: fadeOnce 2s forwards; }
+
+    .looping { animation: pulse 1s infinite; }
+    .not-looping { animation: pulse 1s 1; }
+
+    @keyframes slideIn {
+      from { transform: translateX(-100px); }
+      to { transform: translateX(0); }
+    }
+    .delayed { animation: slideIn 1s ease-in 2s; }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .sequence1 { animation: fadeUp 1s ease 0s; }
+    .sequence2 { animation: fadeUp 1s ease 0.5s; }
+    .sequence3 { animation: fadeUp 1s ease 1s; }
+
+    @keyframes longFade {
+      from { opacity: 1; }
+      to { opacity: 0; }
+    }
+    .long-fade { animation: longFade 10s linear; }
+  </style>
+</head>
+<body>
+
+  <h2>🔁 Keyframes & Basics</h2>
+  <div class="example move-box">Move</div>
+  <div class="example color-box">Color</div>
+  <div class="example rotating">Rotate</div>
+  <div class="example pulsing">Pulse</div>
+
+  <h2>🔄 animation-iteration-count</h2>
+  <div class="example bounce-three">Bounce x3</div>
+  <div class="example spinner">Spin</div>
+  <div class="example fade-once">Fade Once</div>
+  <div class="example looping" id="toggleBox">Toggle Loop</div>
+
+  <h2>⏳ Duration & Delay</h2>
+  <div class="example delayed">Delayed</div>
+  <div class="example sequence1">Seq 1</div>
+  <div class="example sequence2">Seq 2</div>
+  <div class="example sequence3">Seq 3</div>
+  <div class="example long-fade">Fade 10s</div>
+
+  <script>
+    // Toggle animation classes on click
+    const toggleBox = document.getElementById('toggleBox');
+    toggleBox.addEventListener('click', () => {
+      toggleBox.classList.toggle('looping');
+      toggleBox.classList.toggle('not-looping');
+    });
+  </script>
+</body>
+</html>
+
+  

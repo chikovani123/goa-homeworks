@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Circle Animation</title>
+  <style>
+    body {
+      background: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .container {
+      display: flex;
+      gap: 20px;
+    }
+
+    .circle {
+      width: 40px;
+      height: 40px;
+      background-color: gold;
+      border-radius: 50%;
+      animation: pulse 1s infinite alternate;
+    }
+
+    @keyframes pulse {
+      from {
+        transform: scale(1);
+      }
+      to {
+        transform: scale(1.6);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+  </div>
+</body>
+</html>
