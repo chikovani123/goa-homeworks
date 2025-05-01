@@ -1,0 +1,64 @@
+body {
+    margin: 0;
+    background-color: #1f2a30;
+    font-family: sans-serif;
+  }
+  
+  .container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 200px 200px 100px 100px;
+    grid-template-areas:
+      "hero side1"
+      "hero side2"
+      "footer footer"
+      "b5 b6 b7 b8 b9";
+    gap: 10px;
+    padding: 10px;
+  }
+  
+  .box {
+    background: linear-gradient(45deg, #ff9a9e, #fad0c4);
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+  }
+  
+  /* ადგენთ თითოეულის ადგილს */
+  
+  .box1 {
+    grid-area: hero;
+    background: linear-gradient(to right, #f6a, #f9f);
+  }
+  .box2 {
+    grid-area: footer;
+    background: linear-gradient(to right, #c9f, #def);
+  }
+  .box3 {
+    grid-area: side1;
+    background: linear-gradient(to right, #6ef, #9ff);
+  }
+  .box4 {
+    grid-area: side2;
+    background: linear-gradient(to right, #6df, #9df);
+  }
+  .box5 {
+    grid-area: b5;
+  }
+  .box6 {
+    grid-area: b6;
+  }
+  .box7 {
+    grid-area: b7;
+  }
+  .box8 {
+    grid-area: b8;
+  }
+  .box9 {
+    grid-area: b9;
+  }
+  
